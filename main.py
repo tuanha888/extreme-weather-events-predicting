@@ -24,8 +24,8 @@ jc_model = CGNet(model_path= "./models/2. Weighted Jaccard/")
 jc_model.network.to(device)
 ce_model = CGNet(model_path= "./models/1. Weighted CE/")
 ce_model.network.to(device)
-jc_config = Config("./models/7. Weighted Jaccard/config.json")
-ce_config = Config("./models/5. Weighted CE/config.json")
+jc_config = Config("./models/2. Weighted Jaccard/config.json")
+ce_config = Config("./models/1. Weighted CE/config.json")
 # Function to create a globe image with Cartopy
 def create_globe_image(ds):
     # fig, ax = plt.subplots(
