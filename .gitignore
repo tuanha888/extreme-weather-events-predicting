@@ -1,3 +1,4 @@
 climate
 .history
 inference/*
+!inference/.gitkeep
