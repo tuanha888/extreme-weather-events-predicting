@@ -20,9 +20,9 @@ cloudinary.config(
     api_key='329585949937736',
     api_secret='7EbGo_VqXnh8QwjHr6Aap49W4Vg'
 )
-jc_model = CGNet(model_path= "./models/7. Weighted Jaccard/")
+jc_model = CGNet(model_path= "./models/2. Weighted Jaccard/")
 jc_model.network.to(device)
-ce_model = CGNet(model_path= "./models/5. Weighted CE/")
+ce_model = CGNet(model_path= "./models/1. Weighted CE/")
 ce_model.network.to(device)
 jc_config = Config("./models/7. Weighted Jaccard/config.json")
 ce_config = Config("./models/5. Weighted CE/config.json")
