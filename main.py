@@ -12,6 +12,7 @@ from climatenet.utils.data import ClimateDatasetLabeled
 import torch
 import xarray as xr
 from flask_cors import CORS
+plt.switch_backend('agg')
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 app = Flask(__name__)
 CORS(app, resources={r"/": {"origins": "http://localhost:5173"}})
